@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TourismWebPage</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style7.css')}}">
+<style>
+img
+  {
+	width: 200px;
+        heigth: 150px;
+}
+th
+  {
+	font-size: 2em;
+ 	background-color: #f9ddff;
+	padding: 20px;
+}
+table
+    {
+	background-color: white;
+ 	width: 100%;
+	height: 200%;
+}
+td
+  {
+	padding: 25px;
+}
+img{
+	filter:grayscale(100%);
+	transition: 1s;
+
+}
+img:hover{
+	filter:grayscale(0);
+	transform: scale(1.1);
+}
+
+
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Travel And Explore</h1>
+			<ul id="nav">
+				<li><a class="homered" href="#">HOME</a></li>
+				<li><a class="homeblack" href="/packages">PACKAGES</a></li>
+				<li><a class="homeblac" href="/booking">BOOKING</a></li>
+				<li><a class="homebla" href="/places">BACK</a></li>
+				<li><a class="homebl" href="https://www.google.co.in/maps/@21.125498,72.9492192,5z">GOOGLEMAP</a></li>
+			</ul>
+		</nav>
+</header>
+         <table>
+         <tr>
+              <th colspan="4"><center>TAMILNADU TOURISM PLACES</center></th>
+         </tr>
+         <tr>
+       
+	<td><a href="/te1"><img src="{{url_for('static',filename='02_09_2017-temple-_b-020917.jpg')}}"></a><div>EKAMBARESWARAR</div></td>
+        <td><a href="/te2"><img src="{{url_for('static',filename='ram.png')}}"></a><div>RAMANATHASWAMY TEMPLE</div></td>
+        <td><a href="/te3"><img src="{{url_for('static',filename='tam3.jpg')}}"></a><div>VIVEKANANDA ROCK</div></td>
+        <td><a href="/te4"><img src="{{url_for('static',filename='Tamil-Nadu-Temples.jpg')}}"></a><div>RANGANATHASWAMI TEMPLE</div></td>
+	
+</tr>
+<tr>
+<td><a href="/te5"><img src="{{url_for('static',filename='download.jpeg')}}"></a><div>MARINA BEACH</div></td>
+	<td><a href="/te6"><img src="{{url_for('static',filename='dsc0012-4_1891291_s.jpg')}}"></a><div>PONDICHERRY BEACH</div></td>
+        <td><a href="/te7"><img src="{{url_for('static',filename='tam6.jpg')}}"></a><div>MEENAKSHI TEMPLE</div></td>
+	<td><a href="/te8"><img src="{{url_for('static',filename='tam14.jpg')}}"></a><div>MULLAPERIYAR DAM</div></td>
+</tr>
+ <tr>
+	<td><a href="/te9"><img src="{{url_for('static',filename='tam8.jpg')}}"></a><div>PARADISE BEACH</div></td>
+	<td><a href="/te10"><img src="{{url_for('static',filename='tam9.jpg')}}"></a><div>BRIHADESSWARAR TEMPLE</div></td>
+        <td><a href="/te11"><img src="{{url_for('static',filename='download (1).jpeg')}}"></a><div>THIRUVALLUVAR KOTTAM</div></td>
+	<td><a href="/te12"><img src="{{url_for('static',filename='tam11.jpg')}}"></a><div>TAMILNADU WILDLIFE</td>
+</tr>
+ 
+</table>
+
+
+</body>
+</html>

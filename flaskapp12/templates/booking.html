@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TourismWebPage</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style4.css')}}">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Travel And Explore</h1>
+			<ul id="nav">
+				<li><a class="homeblack" href="/packages">PACKAGES</a></li>
+				<li><a class="homeblac" href="/booking">BOOKING</a></li>
+				<li><a class="homebla" href="/home">BACK</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="fwimage1"></div>
+	<div class="login-page">
+	<div class="form">
+	     <form onsubmit="return validation()" method="POST" action="/myProfile" class="register-form">
+	     	<input type="text" name="username" placeholder="username" id="username" />
+	     	<br>
+	     	<input type="password" name="password" placeholder="password" id="password" />
+	     	<br>
+	     	<input type="email" name="email" placeholder="email" id="email" />
+	     	<br>
+	     	<input type="submit" value="Create" style="background-color:#4CAF50" />
+	     	<br>
+	     	<p class="message">Already Registered?<a href="#">Login</a></p>
+	     </form>
+	     <div id="eresult" style="color:red"></div>
+            <script type="text/javascript">
+	        function validation(){
+            var name = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            if(name=='' || email=='' || password=='')
+            {
+        	    document.getElementById("eresult").innerHTML = "ALL fields are required"
+        	    return false;
+            }
+            else if(password.length<8)
+            {
+                document.getElementById("eresult").innerHTML = "password must be atleast 8 charectors"
+                return false;
+            }
+            else {
+        	    return true;
+            }
+        }
+            </script>
+	     <form onsubmit="return validation1()" method="POST" action="/checkuser" class="login-form">
+	     	<input type="text" placeholder="username" name="username" id="username" />
+	     	<input type="password" placeholder="password" name="password" id="password" />
+        	<input type="submit" value="Login" style="background-color:#4CAF50" />
+	     	<p class="message">Forgot password?<a href="/booking3">Change password</a></p>
+	     	<p class="message">Not Registered?<a href="#">Register</a></p>
+	     </form>
+	     
+	</div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script >
+    	$('.message a').click(function(){
+    	$('form').animate({height: "toggle",opacity: "toggle"}, "slow")
+    	});
+    </script>
+</body>
+</html>

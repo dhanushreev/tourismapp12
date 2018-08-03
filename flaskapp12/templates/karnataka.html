@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TourismWebPage</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style5.css')}}">
+<style>
+img
+  {
+	width: 200px;
+        heigth: 150px;
+}
+th
+  {
+	font-size: 2em;
+ 	background-color: #f9ddff;
+	padding: 20px;
+}
+table
+    {
+	background-color: white;
+ 	width: 100%;
+	height: 200%;
+}
+td
+  {
+	padding: 25px;
+}
+img{
+	filter:grayscale(100%);
+	transition: 1s;
+
+}
+img:hover{
+	filter:grayscale(0);
+	transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Travel And Explore</h1>
+			<ul id="nav">
+				<li><a class="homered" href="/home">HOME</a></li>
+				<li><a class="homeblack" href="/packages">PACKAGES</a></li>
+				<li><a class="homeblac" href="/booking">BOOKING</a></li>
+				<li><a class="homebla" href="/places">BACK</a></li>
+				<li><a class="homebl" href="https://www.google.co.in/maps/@21.125498,72.9492192,5z">GOOGLEMAP</a></li>
+			</ul>
+		</nav>
+
+	</header>
+<table>
+         <tr>
+              <th colspan="4"><center>KARNATAKA TOURISM PLACES</center></th>
+         </tr>
+
+         <tr>
+       
+	<td><a href="/k"><img src="{{url_for('static',filename='kar1.jpg')}}"></a><div>BANGALORE</div></td>
+        <td><a href="/k1"><img src="{{url_for('static',filename='go3.jpg')}}"></a><div>MURUDESHWARA</div></td>
+        <td><a href="/k2"><img src="{{url_for('static',filename='go2.jpg')}}"></a><div>GOKARNA</div></td>
+        <td><a href="/k3"><img src="{{url_for('static',filename='go1.jpg')}}"></a><div>UDUPI</div></td>
+	
+</tr>
+<tr>
+<td><a href="/k4"><img src="{{url_for('static',filename='ooty.png')}}"></a><div>OOTY</div></td>
+	<td><a href="/k5"><img src="{{url_for('static',filename='my1.jpg')}}"></a><div>CHAMUNDI HILLS</div></td>
+    <td><a href="/k6"><img src="{{url_for('static',filename='my2.jpg')}}"></a><div>BELUR</div></td>
+	<td><a href="/k7"><img src="{{url_for('static',filename='bija.jpg')}}"></a><div>BIJAPURA</div></td>
+	
+</tr>
+ <tr>
+	<td><a href="/k8"><img src="{{url_for('static',filename='ko1.jpg')}}"></a><div>MADIKERI</div></td>
+	<td><a href="/k9"><img src="{{url_for('static',filename='ko2.jpg')}}"></a><div>THALA CAUVERY</div></td>
+    <td><a href="/k10"><img src="{{url_for('static',filename='ha1.jpg')}}"></a><div>HAMPI</div></td>
+	<td><a href="/k11"><img src="{{url_for('static',filename='agumbe.png')}}"></a><div>AGUMBE</div></td>
+</tr>
+ 
+</table>
+
+</body>
+</html>

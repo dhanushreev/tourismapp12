@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TourismWebPage</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style9.css')}}">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Travel And Explore</h1>
+			<ul id="nav">
+				<li><a class="homeblack" href="/packages">PACKAGES</a></li>
+				<li><a class="homeblac" href="/booking">BOOKING</a></li>
+				<li><a class="homebla" href="/booking">BACK</a></li>
+			</ul>
+		</nav>
+	</header>
+<style>
+.wrap{
+     width:350px;
+	 margin:auto;
+	 background:rgba(7,40,195,0.8);
+	 margin-top:50px;
+	 padding:5px;
+}
+form{
+     padding:10px;
+	 font-family:arial;
+	 border:1px dotted white;
+	 margin:10px;
+}
+
+	  
+h2{
+    text-align:center;
+	background:black;
+	color:white;
+	padding:10px;
+	border-radius:10px;
+}
+input{
+      padding:10px;
+	  margin:5px;
+	  border-radius:5px;
+	  border-none;
+}
+input[type=text],input[type=email], input[type=number], input[type=password]{
+     width:90%;
+}
+input[type=submit]{
+      width:95%;
+	  background:green;
+	  cursor:pointer;
+	  font-size:18px;
+	  font-weight:bold;
+	  color:white;
+}	
+input[type=submit]:hover{
+background:yellow;
+}
+select{
+      padding:10px;
+	  width:32%;
+	  border-radius:5px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+   <form onsubmit="return validation()" method="POST" action="/myProfile2">
+     <h2> BOOK NOW</h2>
+     <input type ="text" name="username" placeholder ="username" id="username">
+	 <input type ="email" name="email" placeholder ="your Email" id="email">
+	 <input type ="number" name="phonenumber" placeholder ="mobile number" id="phonenumber">
+	 <input type ="password" name="password" placeholder ="password" id="password">
+	 <span id="messages" style="color: red"></span>
+	 <input type ="password" name="confirmpassword" placeholder ="confirm password" id="confirmpassword">
+	 <span id="messagess"></span>
+     <select name="package">
+     	<option>package</option>
+        <option value="1000">1000</option>
+	 	<option value="2000">2000</option>
+	 	<option value="2500">2500</option>
+	 </select>	
+
+	 <br>
+	 
+
+	 <!--<span style="font-size:18px;">date of birth</span>
+	 <br>
+	 <select name="DOBday">
+	     <option>day</option>
+		 <option value="1">1</option>
+		 <option value="2">2</option>
+	 </select>
+	  <select name="DOBmonth">
+	     <option>month</option>
+		 <option value="january">january</option>
+		 <option value="february">february</option>
+	 </select>
+	 <select name="DOByears">
+	     <option>year</option>
+		 <option value="2000">2000</option>
+		 <option value="1990">1990</option>
+	 </select>
+	 <br>
+	 <br>
+     <input type="radio" name="male" value="male">male
+	 <input type="radio" name="female" value="female">female
+	 <br>
+	 <input type ="checkbox">I agree to terms and conditions of use
+	 <br> -->
+     <input type="submit" value="submit">	
+   </form>
+   <div id="eresult" style="color:red"></div>
+<script type="text/javascript">
+	function validation(){
+        var name = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var phonenumber = document.getElementById('phonenumber').value;
+        var password = document.getElementById('password').value;
+        var confirmpassword = document.getElementById('confirmpassword').value;
+        if(name=='' || email=='' || phonenumber=='' || password=='' || confirmpassword=='')
+        {
+        	document.getElementById("eresult").innerHTML = "ALL fields are required"
+        	return false;
+        }
+        else if(password.length<8)
+        {
+            document.getElementById("eresult").innerHTML = "password must be atleast 8 charectors"
+            return false;
+        }
+        else if(password != confirmpassword){
+                document.getElementById("eresult").innerHTML="Password are not same";
+                return false;
+            }
+        else {
+        	return true;
+        }
+    }
+ </script>
+</div>
+</body>
+</html>

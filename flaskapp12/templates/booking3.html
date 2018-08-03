@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TourismWebPage</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style4.css')}}">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Travel And Explore</h1>
+			<ul id="nav">
+				<li><a class="homeblack" href="/packages">PACKAGES</a></li>
+				<li><a class="homeblac" href="/booking">BOOKING</a></li>
+				<li><a class="homebla" href="/booking">BACK</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="fwimage1"></div>
+	<div class="login-page">
+	<div class="form">
+<form onsubmit="return validation()" method="POST" action="/myProfile3" class="password-form">
+	     	<input type="text" name="username" placeholder="username" id="username" />
+	     	<input type="email" name="email" placeholder="email" id="email" />
+	     	<input type="password" name="password" placeholder="newpassword" id="password" />
+	     	<input type="password" name="reenterpassword" placeholder="re-enterpassword" id="reenterpassword" />
+	     	<button>Change password</button>
+</form>
+ <div id="eresult" style="color:red"></div>
+<script type="text/javascript">
+	function validation(){
+        var name = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var reenterpassword = document.getElementById('reenterpassword').value;
+        if(name=='' || email=='' || password=='' || reenterpassword=='')
+        {
+        	document.getElementById("eresult").innerHTML = "ALL fields are required"
+        	return false;
+        }
+        else if(password.length<8)
+        {
+            document.getElementById("eresult").innerHTML = "password must be atleast 8 charectors"
+            return false;
+        }
+        else if(password != reenterpassword){
+                document.getElementById("eresult").innerHTML="Password are not same";
+                return false;
+            }
+        else {
+        	return true;
+        }
+    }
+ </script>
+</div>
+</div>
+</div>
+</body>
+</html>

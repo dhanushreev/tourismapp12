@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>TourismWebPage</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}">
+ 
+  <style type="text/css">
+    .float-img {
+      float: right;
+      clear: right;
+      margin-left: 5px;
+      margin-bottom: 10px;
+
+      border: solid black 1px;
+      padding: 1px;
+
+    }
+  </style>
+	<title>PLACES</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style3.css')}}">
+  <header>
+          <nav>
+           <h1>Travel And Explore</h1>
+             <ul id="nav">
+           <li><a class="homeblack" href="/packages">PACKAGES</a></li>
+        <li><a class="homeblac" href="/booking">BOOKING</a></li>
+        <li><a class="homebla" href="/packages">BACK</a></li>
+      </ul>
+    </nav>
+  </header>
+    <center>
+   <h1>TAMIL NADU</h1>
+   </center>
+   <body>
+    <div>
+   	<img src="{{url_for('static',filename='chid.jpeg')}}" width="400" height="200"
+       class="float-img"/>
+        <h2>Chidambaram</h2>
+   	   <p>Days:2 night,3 days<br>
+          Day 1:Visit Nataraja temple,Pichavaram Mangrove forest,Manikavasagar koyil,<br>
+          Day 2:Visit Vadieeswaran temple,Tarangambadi,<br>
+          Day 3:Visit Neyveli,Thillai Kali Amman temple,<br>
+          package cost:3000 
+
+        </p>
+      </div>
+        <br>
+        
+        <div>
+        <img src="{{url_for('static',filename='kanya.jpeg')}}"width="400" height="225"
+       class="float-img"/>
+       <h2>Kanyakumari</h2>
+       <p>Days:1 night,2 days<br>
+          Day 1:Visit Vivekananda rock memorial,Thiruvalluvar statue,<br>
+                Kanyakumari beach,Our lady of ransom church<br>
+          Day 2:Check-out from hotel at 8:30am and visit the <br>
+                Vattakottai fort,Trisea sangam,Padmanabhapuram palace<br>
+          Package cost:4000
+   	   		</p>
+        </div>
+         <div>
+   	    <h2>Madurai</h2>
+   	     <img src="{{url_for('static',filename='meena.jpeg')}}" width="400" height="200"
+       class="float-img"/>
+        	<p>Days:1 night,2 days<br>
+              Day 1:Visit Sri Meenakshi temple,Aayiram kaal Mandapam<br>
+   	   	      Day 2:Check-out from the hotel at 9am and visit Gandhi museum,<br>
+                    Pazhamudhir Solai,alagarkoil temple and shrine<br>
+              Package cost:3000
+          </p>
+        </div>
+        <div>
+         <img src="{{url_for('static',filename='ram.jpeg')}}" width="400" height="200"
+       class="float-img"/>
+       <br>
+        <h2>Rameshwaram</h2>
+        <p>Days:1 night,2 days<br>
+           Day 1:Visit Ramanathaswamy temple,Agni tirtham,Ramar patham<br>
+           Day 2:Visit Rameswaram Ariyavyasya Nagaraja,Electronic moving statue,<br>
+                 museum,Dr.A.P.J.Abdul Kalam memorial<br>
+           package cost:3500
+         </p>
+     </div>
+   	  
+   </body>
+
+	
+
+
+</html>

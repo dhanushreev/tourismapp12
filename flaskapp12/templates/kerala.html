@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TourismWebPage</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style6.css')}}">
+<style>
+img
+  {
+	width: 200px;
+        heigth: 150px;
+}
+th
+  {
+	font-size: 2em;
+ 	background-color: #f9ddff;
+	padding: 20px;
+}
+table
+    {
+	background-color: white;
+ 	width: 100%;
+	height: 200%;
+}
+td
+  {
+	padding: 25px;
+}
+img{
+	filter:grayscale(100%);
+	transition: 1s;
+
+}
+img:hover{
+	filter:grayscale(0);
+	transform: scale(1.1);
+}
+
+</style>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Travel And Explore</h1>
+			<ul id="nav">
+				<li><a class="homered" href="#">HOME</a></li>
+				<li><a class="homeblack" href="/packages">PACKAGES</a></li>
+				<li><a class="homeblac" href="/booking">BOOKING</a></li>
+				<li><a class="homebla" href="/places">BACK</a></li>
+				<li><a class="homebl" href="https://www.google.co.in/maps/@21.125498,72.9492192,5z">GOOGLEMAP</a></li>
+			</ul>
+		</nav>
+</header>
+<table>
+         <tr>
+              <th colspan="4"><center>KERALA TOURISM PLACES</center></th>
+         </tr>
+         <tr>
+       
+	    <td><a href="/ke1"><img src="{{url_for('static',filename='gu.jpg')}}"></a><div>GURUVAYUR</div></td>
+        <td><a href="/ke2"><img src="{{url_for('static',filename='gal2.jpg')}}"></a><div>ATHIREPPILLY FALLS</div></td>
+        <td><a href="/ke3"><img src="{{url_for('static',filename='gal3.jpg')}}"></a><div>ALLEPPEY BACKWATERS</div></td>
+        <td><a href="/ke4"><img src="{{url_for('static',filename='gal4.jpg')}}"></a><div>WAYANAD</div></td>
+	
+</tr>
+<tr>
+        <td><a href="/ke5"><img src="{{url_for('static',filename='tam12.jpg')}}"></a><div>THALASSERY BRIDGE</div></td>
+	    <td><a href="/ke6"><img src="{{url_for('static',filename='edakal.jpg')}}"></a><div>EDAKKAL CAVES</div></td>
+        <td><a href="/ke7"><img src="{{url_for('static',filename='gal6.jpg')}}"></a><div>THRISSUR</div></td>
+	<td><a href="/ke8"><img src="{{url_for('static',filename='kutira.jpg')}}"></a><div>KUTHIRAMALIKA PALACE</div></td>
+</tr>
+ <tr>
+	<td><a href="/ke9"><img src="{{url_for('static',filename='img8.jpg')}}"></a><div>PEPPARA WILDLIFE SANCTUARY</div></td>
+	<td><a href="/ke10"><img src="{{url_for('static',filename='ke3.jpg')}}"></a><div>SOOCHIPARA FALLS</div></td>
+        <td><a href="/ke11"><img src="{{url_for('static',filename='ke4.jpg')}}"></a><div>VARAKALA BEACH</div></td>
+	<td><a href="/ke12"><img src="{{url_for('static',filename='ke5.jpg')}}"></a><div>THIRUVANANTHAPURAM</div></td>
+</tr>
+ 
+</table>
+	
+</body>
+</html>

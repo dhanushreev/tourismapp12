@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TourismWebPage</title>
+	<link rel="stylesheet" href="style9.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Travel And Explore</h1>
+			<ul id="nav">
+				<li><a class="homeblack" href="packages.html">PACKAGES</a></li>
+				<li><a class="homeblac" href="booking.html">BOOKING</a></li>
+				<li><a class="homebla" href="booking.html">BACK</a></li>
+			</ul>
+		</nav>
+	</header>
+<style>
+.wrap{
+     width:350px;
+	 margin:auto;
+	 background:blue ;
+	 margin-top:50px;
+	 padding:5px;
+}
+form{
+     padding:10px;
+	 font-family:arial;
+	 border:1px dotted white;
+	 margin:10px;
+}
+
+	  
+h2{
+    text-align:center;
+	background:black;
+	color:white;
+	padding:10px;
+	border-radius:10px;
+}
+input{
+      padding:10px;
+	  margin:5px;
+	  border-radius:5px;
+	  border-none;
+}
+input[type=text],input[type=email], input[type=number], input[type=password]{
+     width:90%;
+}
+input[type=submit]{
+      width:95%;
+	  background:green;
+	  cursor:pointer;
+	  font-size:18px;
+	  font-weight:bold;
+	  color:white;
+}	
+input[type=submit]:hover{
+background:yellow;
+}
+select{
+      padding:10px;
+	  width:32%;
+	  border-radius:5px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+   <form>
+     <h2> BOOK NOW</h2>
+     <input type ="text" name="yourname" placeholder ="your name">
+	 <input type ="email" name="email" placeholder ="your Email">
+	 <input type ="number" name="mobile number" placeholder ="mobile number">
+	 <input type ="password" name="password" placeholder ="password">
+	 <input type ="password" name="confirm password" placeholder ="confirm password">
+     <select name="package">
+     	<option>package</option>
+        <option value="1000">1000</option>
+	 	<option value="2000">2000</option>
+	 	<option value="2500">2500</option>
+	 </select>	
+
+	 <br>
+	 
+
+	 <!--<span style="font-size:18px;">date of birth</span>
+	 <br>
+	 <select name="DOBday">
+	     <option>day</option>
+		 <option value="1">1</option>
+		 <option value="2">2</option>
+	 </select>
+	  <select name="DOBmonth">
+	     <option>month</option>
+		 <option value="january">january</option>
+		 <option value="february">february</option>
+	 </select>
+	 <select name="DOByears">
+	     <option>year</option>
+		 <option value="2000">2000</option>
+		 <option value="1990">1990</option>
+	 </select>
+	 <br>
+	 <br>
+     <input type="radio" name="male" value="male">male
+	 <input type="radio" name="female" value="female">female
+	 <br>
+	 <input type ="checkbox">I agree to terms and conditions of use
+	 <br> -->
+     <input type="submit" value="submit">	 
+   </form>
+</div>
+</body>
+</html>
